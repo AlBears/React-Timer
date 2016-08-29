@@ -7,13 +7,13 @@ var Countdown = require('Countdown');
 
 
 //load foundation
-require('style!css!foundation-sites/dist/foundation.min.css');
+
 $(document).foundation();
 
 //load css
 require('style!css!sass!applicationStyles');
 
-ReactDOM.render( 
+ReactDOM.render(
 	<Router history={hashHistory}>
 		<Route path="/" component={Main}>
 			<Route path="countdown" component={Countdown}/>
